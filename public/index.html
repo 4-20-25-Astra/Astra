@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на услугу</title>
+</head>
+<body>
+    <h1>Добро пожаловать на наш сайт!</h1>
+    <p>Здесь вы можете записаться на наши услуги.</p>
+
+    <!-- Форма записи -->
+    <h2>Запись на услугу</h2>
+    <form id="appointmentForm">
+        <!-- Поля ввода -->
+        <label for="first_name">Имя:</label>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+
+        <label for="last_name">Фамилия:</label>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="birth_date">Дата и время рождения:</label>
+        <input type="datetime-local" id="birth_date" name="birth_date" required><br><br>
+
+        <label for="location">Страна, населенный пункт:</label>
+        <input type="text" id="location" name="location" required><br><br>
+
+        <!-- Чекбоксы услуг -->
+        <label>Выберите услуги:</label><br>
+        <input type="checkbox" id="service1" name="services[]" value="1">
+        <label for="service1">Звездный код души</label><br>
+
+        <input type="checkbox" id="service2" name="services[]" value="2">
+        <label for="service2">Гармония созвездий: совместимость в любви</label><br>
+
+        <input type="checkbox" id="service3" name="services[]" value="3">
+        <label for="service3">Галактический бизнес-прогноз</label><br>
+
+        <input type="checkbox" id="service4" name="services[]" value="4">
+        <label for="service4">Лунный свет: путь к себе</label><br>
+
+        <input type="checkbox" id="service5" name="services[]" value="5">
+        <label for="service5">Планетарный щит: защита и энергия</label><br><br>
+
+        <!-- Радиокнопки специалистов -->
+        <label>Выберите специалиста:</label><br>
+        <input type="radio" id="specialist1" name="specialist" value="1" required>
+        <label for="specialist1">Петрова Анастасия</label><br>
+
+        <input type="radio" id="specialist2" name="specialist" value="2">
+        <label for="specialist2">Колышева Полина</label><br>
+
+        <input type="radio" id="specialist3" name="specialist" value="3">
+        <label for="specialist3">Романюк Марина</label><br>
+
+        <input type="radio" id="specialist4" name="specialist" value="4">
+        <label for="specialist4">Вещунова Екатерина</label><br><br>
+
+        <!-- Согласие на обработку данных -->
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">Согласен на обработку персональных данных</label><br><br>
+
+        <!-- Кнопка отправки -->
+        <button type="submit">Отправить</button>
+    </form>
+
+    <!-- Сообщение об успешной отправке -->
+    <p id="responseMessage"></p>
+
+    <!-- Дополнительный контент -->
+    <h2>О нас</h2>
+    <p>Мы предлагаем уникальные астрологические услуги для вашего благополучия.</p>
+
+    <script>
+        document.getElementById('appointmentForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Собираем данные формы
+            const formData = new FormData(this);
+            const data = {};
+            formData.forEach((value, key) => {
+                if (key === 'services[]') {
+                    if (!data.services) data.services = [];
+                    data.services.push(value);
+                } else {
+                    data[key] = value;
+                }
+            });
+
+            // Отправляем данные на сервер
+            fetch('/api/submit-form', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+            .then(response => response.json())
+            .then(result => {
+                document.getElementById('responseMessage').textContent = result.message;
+            })
+            .catch(error => {
+                console.error('Ошибка:', error);
+                document.getElementById('responseMessage').textContent = 'Произошла ошибка при отправке формы.';
+            });
+        });
+    </script>
+</body>
+</html>
