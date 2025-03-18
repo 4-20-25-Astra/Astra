@@ -1,0 +1,12 @@
+{
+  "name": "my-astro-site",
+  "version": "1.0.0",
+  "description": "Мой сайт с формой записи",
+  "main": "index.js",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.0.0"
+  }
+}
