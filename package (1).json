@@ -1,0 +1,27 @@
+{
+  "name": "my-astro-site",
+  "version": "1.0.0",
+  "description": "Мой сайт с формой записи",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "vercel dev",
+    "dev": "vercel dev",
+    "build": "echo 'Build step is not required for this project'",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.0.0"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "license": "MIT",
+  "keywords": [
+    "astro",
+    "supabase",
+    "vercel",
+    "form"
+  ],
+  "author": "Ваше Имя <ваш.email@example.com>"
+}
