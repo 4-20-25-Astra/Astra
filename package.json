@@ -2,26 +2,18 @@
   "name": "my-astro-site",
   "version": "1.0.0",
   "description": "Мой сайт с формой записи",
-  "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "start": "vercel dev",
-    "dev": "vercel dev",
-    "build": "echo 'Build step is not required for this project'",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "deploy": "vercel --prod"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.0.0"
+    "@sendgrid/mail": "^7.7.0",
+    "@supabase/supabase-js": "^2.21.0"
   },
   "engines": {
-    "node": "18.x"
-  },
-  "license": "MIT",
-  "keywords": [
-    "astro",
-    "supabase",
-    "vercel",
-    "form"
-  ],
-  "author": "Ваше Имя <ваш.email@example.com>"
+    "node": ">=18.x"
+  }
 }
