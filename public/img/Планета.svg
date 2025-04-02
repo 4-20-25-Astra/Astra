@@ -1,0 +1,28 @@
+<svg width="1413" height="782" viewBox="0 0 1413 782" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_529_135" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="279" y="8" width="784" height="774">
+<ellipse cx="671.034" cy="395.179" rx="391.966" ry="386.809" fill="#FB6A1D"/>
+</mask>
+<g mask="url(#mask0_529_135)">
+<ellipse cx="671.034" cy="395.179" rx="391.966" ry="386.809" fill="#FB6A1D"/>
+<g style="mix-blend-mode:darken">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M437.739 798.233C540.297 821.86 860.322 753.508 1002.43 200.621L1203.07 250.843C1044.35 868.378 642.375 1055.15 390.679 997.161L437.739 798.233Z" fill="#CC4700"/>
+</g>
+</g>
+<path d="M1413 339.133C1413 497.159 1096.69 625.265 706.5 625.265C316.311 625.265 0 497.159 0 339.133C0 181.106 316.311 53 706.5 53C1096.69 53 1413 181.106 1413 339.133ZM140.684 339.133C140.684 465.691 394.009 568.288 706.5 568.288C1018.99 568.288 1272.32 465.691 1272.32 339.133C1272.32 212.574 1018.99 109.977 706.5 109.977C394.009 109.977 140.684 212.574 140.684 339.133Z" fill="#D0A58D"/>
+<g clip-path="url(#clip0_529_135)">
+<mask id="mask1_529_135" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="279" y="0" width="778" height="774">
+<ellipse cx="668.034" cy="386.809" rx="388.966" ry="386.809" fill="#FB6A1D"/>
+</mask>
+<g mask="url(#mask1_529_135)">
+<ellipse cx="668.034" cy="386.809" rx="388.966" ry="386.809" fill="#FB6A1D"/>
+<g style="mix-blend-mode:darken">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M444.803 789.84C546.575 813.467 864.151 745.114 1005.17 192.228L1204.28 242.45C1046.77 859.984 647.872 1046.75 398.103 988.768L444.803 789.84Z" fill="#CC4700"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_529_135">
+<rect width="784" height="387" fill="white" transform="translate(279)"/>
+</clipPath>
+</defs>
+</svg>

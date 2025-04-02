@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Astra</title>
+    <title>Астрологические услуги | Разбор натальной карты в Москве</title>
+<meta name="description" content="Профессиональный астрологический разбор с 10-летним опытом. Кармическая астрология, прогнозы совместимости, бизнес-анализ.">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
   </head>
@@ -12,11 +13,11 @@
       <img src="/img/logo.svg" alt="logo" />
       <nav>
         <ul>
-          <li><a href="#">Эксперты</a></li>
-          <li><a href="#">Услуги</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="#specialist">Эксперты</a></li>
+          <li><a href="#slider-container">Услуги</a></li>
+          <li><a href="#section-form">Контакты</a></li>
         </ul>
-        <button class="cta-button">Получить разбор</button>
+        <button class="cta-button" onclick="scrollToForm()">Получить разбор</button>
       </nav>
     </header>
 
@@ -27,29 +28,31 @@
           Персональный астрологический разбор <br />и рекомендации от
           профессионала
         </p>
-        <button class="main-button">Получить разбор</button>
+        <button class="main-button" onclick="scrollToForm()">Получить разбор</button>
       </div>
     </div>
     <img class="main-image" src="img/Group 5308.png" alt="woman" />
 
     <main>
-      <section class="specialist">
-        <p class="quote">
-          “Астрология не предопределяет судьбу, но дает ключи к пониманию себя,
-          своих возможностей и вызовов. Это не просто наука о планетах, это
-          искусство видеть связь между небом и землей, космосом и душой”
-        </p>
-        <h2 class="name">Инна Марьева</h2>
-        <p class="description">
-          Профессиональный астролог с 10-летним опытом. Специализация: глубокий
-          анализ натальных карт, прогнозирование и работа с кармическими
-          задачами
-        </p>
-        <div class="badges">
-          <img src="img/1.png" alt="Сертификат" />
-          <img src="img/2.png" alt="Сертификат" />
-          <img src="img/3.png" alt="Сертификат" />
-          <img src="img/4.png" alt="Сертификат" />
+      <section class="specialist" id="specialist">
+        <div class="specialist-container">
+          <!-- Блок будет заполняться динамически JavaScript -->
+        </div>
+        
+        <div class="specialist-selector">
+          <!-- Кнопки-изображения специалистов -->
+          <button class="specialist-button" data-id="1">
+            <img src="img/1.png" alt="Петрова Анастасия" />
+          </button>
+          <button class="specialist-button" data-id="2">
+            <img src="img/2.png" alt="Колышева Полина" />
+          </button>
+          <button class="specialist-button" data-id="3">
+            <img src="img/3.png" alt="Романюк Марина" />
+          </button>
+          <button class="specialist-button" data-id="4">
+            <img src="img/4.png" alt="Вещунова Екатерина" />
+          </button>
         </div>
       </section>
 
@@ -105,170 +108,100 @@
         </div>
       </section>
 
-      <div class="slider-container">
+      <div class="slider-container" id="slider-container">
         <div class="slider">
           <!-- Слайд 1 -->
           <div class="slide">
-            <div
-              class="slide-image"
-              style="background-image: url('/img/planet.png')"
-            ></div>
+            <div class="slide-image" style="background-image: url('/img/Планета.svg')"></div>
             <div class="slide-content">
-              <h2>Звездный код души</h2>
+              <h2>Планетарный щит: Защита и энергия</h2>
               <p>
-                Расшифровка вашей натальной карты — уникального звездного кода,
-                заложенного в момент вашего рождения. Этот разбор раскроет ваши
-                истинные таланты, предназначение и путь к гармонии.
+                Укрепите свое энергетическое поле с помощью персональных астрологических рекомендаций. Мы выявим периоды уязвимости и предложим методы защиты. Незаменимый инструмент для чувствительных к космическим влияниям людей.
               </p>
-              <ul>
-                <li>Поймете свои сильные стороны и скрытые способности.</li>
-                <li>
-                  Узнаете, как реализовать свой потенциал в карьере и личной
-                  жизни.
-                </li>
-                <li>
-                  Получите рекомендации для достижения внутреннего баланса.
-                </li>
-              </ul>
-              <button class="slide-btn">Получить разбор</button>
+              
+              <div class="price-btn-container">
+                <div class="price">4 900 ₽</div>
+                <button class="slide-btn" onclick="scrollToForm()">Получить разбор</button>
+              </div>
             </div>
           </div>
-
+      
           <!-- Слайд 2 -->
           <div class="slide">
-            <div
-              class="slide-image"
-              style="background-image: url('/img/planet.png')"
-            ></div>
+            <div class="slide-image" style="background-image: url('/img/Планета 3.svg')"></div>
             <div class="slide-content">
-              <h2>Звездный код души</h2>
+              <h2>Лунный свет: Путь к себе</h2>
               <p>
-                Расшифровка вашей натальной карты — уникального звездного кода,
-                заложенного в момент вашего рождения. Этот разбор раскроет ваши
-                истинные таланты, предназначение и путь к гармонии.
+                Исследуйте свои эмоции и подсознание через призму лунных циклов. Этот сервис поможет понять ваши истинные потребности и найти внутренний баланс. Особенно полезен в периоды важных жизненных решений.
               </p>
-              <ul>
-                <li>Поймете свои сильные стороны и скрытые способности.</li>
-                <li>
-                  Узнаете, как реализовать свой потенциал в карьере и личной
-                  жизни.
-                </li>
-                <li>
-                  Получите рекомендации для достижения внутреннего баланса.
-                </li>
-              </ul>
-              <button class="slide-btn">Получить разбор</button>
+              
+              <div class="price-btn-container">
+                <div class="price">3 900 ₽</div>
+                <button class="slide-btn" onclick="scrollToForm()">Получить разбор</button>
+              </div>
             </div>
           </div>
-
+      
           <!-- Слайд 3 -->
           <div class="slide">
-            <div
-              class="slide-image"
-              style="background-image: url('/img/planet.png')"
-            ></div>
+            <div class="slide-image" style="background-image: url('/img/Group 553.svg')"></div>
             <div class="slide-content">
-              <h2>Звездный код души</h2>
+              <h2>Галактический бизнес-прогноз</h2>
               <p>
-                Расшифровка вашей натальной карты — уникального звездного кода,
-                заложенного в момент вашего рождения. Этот разбор раскроет ваши
-                истинные таланты, предназначение и путь к гармонии.
+                Планируйте важные сделки и проекты в соответствии с космическими ритмами. Мы выявим благоприятные периоды для старта бизнеса, инвестиций и карьерных изменений. Астрологический гид для успешных предпринимателей.
               </p>
-              <ul>
-                <li>Поймете свои сильные стороны и скрытые способности.</li>
-                <li>
-                  Узнаете, как реализовать свой потенциал в карьере и личной
-                  жизни.
-                </li>
-                <li>
-                  Получите рекомендации для достижения внутреннего баланса.
-                </li>
-              </ul>
-              <button class="slide-btn">Получить разбор</button>
+              
+              <div class="price-btn-container">
+                <div class="price">5 900 ₽</div>
+                <button class="slide-btn" onclick="scrollToForm()">Получить разбор</button>
+              </div>
             </div>
           </div>
-
+      
           <!-- Слайд 4 -->
           <div class="slide">
-            <div
-              class="slide-image"
-              style="background-image: url('/img/planet.png')"
-            ></div>
+            <div class="slide-image" style="background-image: url('/img/Планета 2.svg')"></div>
             <div class="slide-content">
               <h2>Звездный код души</h2>
               <p>
-                Расшифровка вашей натальной карты — уникального звездного кода,
-                заложенного в момент вашего рождения. Этот разбор раскроет ваши
-                истинные таланты, предназначение и путь к гармонии.
+                Раскройте тайны вашего глубинного "Я" через анализ натальной карты. Этот индивидуальный астропортрет покажет ваши скрытые таланты, кармические задачи и истинное предназначение. Идеально для тех, кто ишет путь к осознанной жизни.
               </p>
-              <ul>
-                <li>Поймете свои сильные стороны и скрытые способности.</li>
-                <li>
-                  Узнаете, как реализовать свой потенциал в карьере и личной
-                  жизни.
-                </li>
-                <li>
-                  Получите рекомендации для достижения внутреннего баланса.
-                </li>
-              </ul>
-              <button class="slide-btn">Получить разбор</button>
+              
+              <div class="price-btn-container">
+                <div class="price">4 500 ₽</div>
+                <button class="slide-btn" onclick="scrollToForm()">Получить разбор</button>
+              </div>
             </div>
           </div>
-
+      
           <!-- Слайд 5 -->
           <div class="slide">
-            <div
-              class="slide-image"
-              style="background-image: url('/img/planet.png')"
-            ></div>
+            <div class="slide-image" style="background-image: url('/img/Group 5309.svg')"></div>
             <div class="slide-content">
-              <h2>Звездный код души</h2>
+              <h2>Гармония созвездий: Совместимость в любви</h2>
               <p>
-                Расшифровка вашей натальной карты — уникального звездного кода,
-                заложенного в момент вашего рождения. Этот разбор раскроет ваши
-                истинные таланты, предназначение и путь к гармонии.
+                Узнайте, насколько вы гармонируете с партнером на энергетическом уровне. Наш анализ покажет сильные стороны ваших отношений и возможные точки напряжения. Идеальный инструмент для пар, стремящихся к глубокой связи.
               </p>
-              <ul>
-                <li>Поймете свои сильные стороны и скрытые способности.</li>
-                <li>
-                  Узнаете, как реализовать свой потенциал в карьере и личной
-                  жизни.
-                </li>
-                <li>
-                  Получите рекомендации для достижения внутреннего баланса.
-                </li>
-              </ul>
-              <button class="slide-btn">Получить разбор</button>
+              
+              <div class="price-btn-container">
+                <div class="price">6 900 ₽</div>
+                <button class="slide-btn" onclick="scrollToForm()">Получить разбор</button>
+              </div>
             </div>
           </div>
         </div>
-
+      
         <!-- Стрелки навигации -->
         <button class="slider-arrow prev"></button>
         <button class="slider-arrow next"></button>
-
+      
         <!-- Навигация точками (превью изображений) -->
         <div class="slider-nav">
-          <div
-            class="slider-dot active"
-            style="background-image: url('/img/Group\ 551\ 2.png')"
-          ></div>
-          <div
-            class="slider-dot"
-            style="background-image: url('/img/Group\ 552\ 1.png')"
-          ></div>
-          <div
-            class="slider-dot"
-            style="background-image: url('/img/Group\ 553.png')"
-          ></div>
-          <div
-            class="slider-dot"
-            style="background-image: url('/img/Group\ 5252\ 1.png')"
-          ></div>
-          <div
-            class="slider-dot"
-            style="background-image: url('/img/Group\ 5309.png')"
-          ></div>
+          <div class="slider-dot active" style="background-image: url('/img/Group\ 551\ 2.png')"></div>
+          <div class="slider-dot" style="background-image: url('/img/Group\ 552\ 1.png')"></div>
+          <div class="slider-dot" style="background-image: url('/img/Group\ 553.png')"></div>
+          <div class="slider-dot" style="background-image: url('/img/Group\ 5252\ 1.png')"></div>
+          <div class="slider-dot" style="background-image: url('/img/Group\ 5309.png')"></div>
         </div>
       </div>
 
@@ -308,10 +241,10 @@
             <figcaption>3 Мы свяжемся с вами в течение 15 минут</figcaption>
           </figure>
         </div>
-        <button class="how-button">Получить разбор</button>
+        <button class="how-button" onclick="scrollToForm()">Получить разбор</button>
       </section>
 
-     <section class="section-form">
+     <section class="section-form" id="section-form">
         <h2 class="form-header">Готовы узнать, что звезды готовят для вас?</h2>
         <form id="astroForm" class="form-container">
           <div class="form-left">
@@ -651,6 +584,88 @@
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const specialists = {
+    1: {
+      name: "Петрова Анастасия",
+      description: "Профессиональный астролог с 8-летним опытом. Специализация: кармическая астрология и анализ прошлых жизней.",
+      quote: "Кармическая астрология - это мост между прошлым и настоящим. Через анализ предыдущих воплощений мы находим ключи к текущим жизненным вызовам и урокам.",
+      photo: "img/1.png"
+    },
+    2: {
+      name: "Колышева Полина",
+      description: "Профессиональный астролог с 10-летним опытом. Специализация: глубокий анализ натальных карт, прогнозирование и работа с кармическими задачами.",
+      quote: "Натальная карта - это карта души. Расшифровывая её символы, мы находим пути наилучшей реализации потенциала, заложенного в человеке при рождении.",
+      photo: "img/2.png"
+    },
+    3: {
+      name: "Романюк Марина",
+      description: "Астролог с 7-летним опытом. Специализация: медицинская астрология и вопросы здоровья.",
+      quote: "Тело и космос связаны неразрывно. Медицинская астрология помогает понять уязвимые места организма и оптимальные периоды для лечения и профилактики.",
+      photo: "img/3.png"
+    },
+    4: {
+      name: "Вещунова Екатерина",
+      description: "Астролог с 12-летним опытом. Специализация: бизнес-астрология и финансовые прогнозы.",
+      quote: "Звезды показывают оптимальные моменты для старта проектов, инвестиций и важных решений. Бизнес-астрология - это стратегическое планирование в гармонии с космическими ритмами.",
+      photo: "img/4.png"
+    }
+  };
+
+  let currentSpecialist = 1;
+
+  // Функция для отображения специалиста
+  function displaySpecialist(specialistId) {
+    currentSpecialist = specialistId;
+    const specialist = specialists[specialistId];
+    const container = document.querySelector('.specialist-container');
+    
+    container.innerHTML = `
+      <div class="specialist-photo">
+        <img src="${specialist.photo}" alt="${specialist.name}" />
+      </div>
+      <p class="quote">"${specialist.quote}"</p>
+      <h2 class="name">${specialist.name}</h2>
+      <p class="description">${specialist.description}</p>
+    `;
+
+    // Обновляем активную кнопку
+    updateActiveButton();
+  }
+
+  // Функция для обновления активной кнопки
+  function updateActiveButton() {
+    document.querySelectorAll('.specialist-button').forEach(button => {
+      if (parseInt(button.getAttribute('data-id')) === currentSpecialist) {
+        button.classList.add('active');
+        // Увеличиваем изображение активного специалиста
+        button.querySelector('img').style.transform = 'scale(1.1)';
+      } else {
+        button.classList.remove('active');
+        button.querySelector('img').style.transform = 'scale(1)';
+      }
+    });
+  }
+
+  // Добавляем обработчики событий для кнопок
+  document.querySelectorAll('.specialist-button').forEach(button => {
+    button.addEventListener('click', function() {
+      displaySpecialist(parseInt(this.getAttribute('data-id')));
+    });
+  });
+
+  // Инициализация - показываем первого специалиста
+  displaySpecialist(1);
+});
+
+function scrollToForm() {
+  const formSection = document.getElementById('section-form');
+  formSection.scrollIntoView({
+    behavior: 'smooth',  // плавная прокрутка
+    block: 'start'       // выравнивание по верху
+  });
+}
     </script>
   </body>
 </html>
