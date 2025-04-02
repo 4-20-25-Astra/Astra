@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Астрологические услуги | Разбор натальной карты в Москве</title>
+<meta name="description" content="Профессиональный астрологический разбор с 10-летним опытом. Кармическая астрология, прогнозы совместимости, бизнес-анализ.">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+  </head>
+  <body>
+    <header>
+      <img src="/img/logo.svg" alt="logo" />
+      <nav>
+        <ul>
+          <li><a href="#specialist">Эксперты</a></li>
+          <li><a href="#slider-container">Услуги</a></li>
+          <li><a href="#section-form">Контакты</a></li>
+        </ul>
+        <button class="cta-button" onclick="scrollToForm()">Получить разбор</button>
+      </nav>
+    </header>
+
+    <div class="banner">
+      <div class="content">
+        <h1>Узнайте, что звезды готовят именно для вас!</h1>
+        <p>
+          Персональный астрологический разбор <br />и рекомендации от
+          профессионала
+        </p>
+        <button class="main-button" onclick="scrollToForm()">Получить разбор</button>
+      </div>
+    </div>
+    <img class="main-image" src="img/Group 5308.png" alt="woman" />
+
+    <main>
+      <section class="specialist" id="specialist">
+        <div class="specialist-container">
+          <!-- Блок будет заполняться динамически JavaScript -->
+        </div>
+        
+        <div class="specialist-selector">
+          <!-- Кнопки-изображения специалистов -->
+          <button class="specialist-button" data-id="1">
+            <img src="img/1.png" alt="Петрова Анастасия" />
+          </button>
+          <button class="specialist-button" data-id="2">
+            <img src="img/2.png" alt="Колышева Полина" />
+          </button>
+          <button class="specialist-button" data-id="3">
+            <img src="img/3.png" alt="Романюк Марина" />
+          </button>
+          <button class="specialist-button" data-id="4">
+            <img src="img/4.png" alt="Вещунова Екатерина" />
+          </button>
+        </div>
+      </section>
+
+      <section class="cards">
+        <h2>Что вы узнаете из астрологического разбора?</h2>
+        <div class="cards-container">
+          <figure>
+            <img
+              class="card"
+              src="img/q.png"
+              alt="Точный анализ вашей натальной карты"
+            />
+            <figcaption>Точный анализ вашей натальной карты</figcaption>
+          </figure>
+          <figure>
+            <img
+              class="card"
+              src="img/w.png"
+              alt="Совместимость в любви и дружбе"
+            />
+            <figcaption>Совместимость в любви и дружбе</figcaption>
+          </figure>
+          <figure>
+            <img
+              class="card"
+              src="img/e.png"
+              alt="Прогноз на год для бизнеса и карьеры"
+            />
+            <figcaption>Прогноз на год для бизнеса и карьеры</figcaption>
+          </figure>
+          <figure>
+            <img
+              class="card"
+              src="img/r.png"
+              alt="Персональные рекомендации для улучшения жизни"
+            />
+            <figcaption>
+              Персональные рекомендации для улучшения жизни
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="card" src="img/t.png" alt="Основные черты личности" />
+            <figcaption>Основные черты личности</figcaption>
+          </figure>
+          <figure>
+            <img
+              class="card"
+              src="img/y.png"
+              alt="Потенциал в разных областях жизни"
+            />
+            <figcaption>Потенциал в разных областях жизни</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <div class="slider-container" id="slider-container">
+        <div class="slider">
+          <!-- Слайд 1 -->
+          <div class="slide">
+            <div class="slide-image" style="background-image: url('/img/Планета.svg')"></div>
+            <div class="slide-content">
+              <h2>Планетарный щит: Защита и энергия</h2>
+              <p>
+                Укрепите свое энергетическое поле с помощью персональных астрологических рекомендаций. Мы выявим периоды уязвимости и предложим методы защиты. Незаменимый инструмент для чувствительных к космическим влияниям людей.
+              </p>
+              
+              <div class="price-btn-container">
+                <div class="price">4 900 ₽</div>
+                <button class="slide-btn" onclick="scrollToForm()">Получить разбор</button>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Слайд 2 -->
+          <div class="slide">
+            <div class="slide-image" style="background-image: url('/img/Планета 3.svg')"></div>
+            <div class="slide-content">
+              <h2>Лунный свет: Путь к себе</h2>
+              <p>
+                Исследуйте свои эмоции и подсознание через призму лунных циклов. Этот сервис поможет понять ваши истинные потребности и найти внутренний баланс. Особенно полезен в периоды важных жизненных решений.
+              </p>
+              
+              <div class="price-btn-container">
+                <div class="price">3 900 ₽</div>
+                <button class="slide-btn" onclick="scrollToForm()">Получить разбор</button>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Слайд 3 -->
+          <div class="slide">
+            <div class="slide-image" style="background-image: url('/img/Group 553.svg')"></div>
+            <div class="slide-content">
+              <h2>Галактический бизнес-прогноз</h2>
+              <p>
+                Планируйте важные сделки и проекты в соответствии с космическими ритмами. Мы выявим благоприятные периоды для старта бизнеса, инвестиций и карьерных изменений. Астрологический гид для успешных предпринимателей.
+              </p>
+              
+              <div class="price-btn-container">
+                <div class="price">5 900 ₽</div>
+                <button class="slide-btn" onclick="scrollToForm()">Получить разбор</button>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Слайд 4 -->
+          <div class="slide">
+            <div class="slide-image" style="background-image: url('/img/Планета 2.svg')"></div>
+            <div class="slide-content">
+              <h2>Звездный код души</h2>
+              <p>
+                Раскройте тайны вашего глубинного "Я" через анализ натальной карты. Этот индивидуальный астропортрет покажет ваши скрытые таланты, кармические задачи и истинное предназначение. Идеально для тех, кто ишет путь к осознанной жизни.
+              </p>
+              
+              <div class="price-btn-container">
+                <div class="price">4 500 ₽</div>
+                <button class="slide-btn" onclick="scrollToForm()">Получить разбор</button>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Слайд 5 -->
+          <div class="slide">
+            <div class="slide-image" style="background-image: url('/img/Group 5309.svg')"></div>
+            <div class="slide-content">
+              <h2>Гармония созвездий: Совместимость в любви</h2>
+              <p>
+                Узнайте, насколько вы гармонируете с партнером на энергетическом уровне. Наш анализ покажет сильные стороны ваших отношений и возможные точки напряжения. Идеальный инструмент для пар, стремящихся к глубокой связи.
+              </p>
+              
+              <div class="price-btn-container">
+                <div class="price">6 900 ₽</div>
+                <button class="slide-btn" onclick="scrollToForm()">Получить разбор</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Стрелки навигации -->
+        <button class="slider-arrow prev"></button>
+        <button class="slider-arrow next"></button>
+      
+        <!-- Навигация точками (превью изображений) -->
+        <div class="slider-nav">
+          <div class="slider-dot active" style="background-image: url('/img/Group\ 551\ 2.png')"></div>
+          <div class="slider-dot" style="background-image: url('/img/Group\ 552\ 1.png')"></div>
+          <div class="slider-dot" style="background-image: url('/img/Group\ 553.png')"></div>
+          <div class="slider-dot" style="background-image: url('/img/Group\ 5252\ 1.png')"></div>
+          <div class="slider-dot" style="background-image: url('/img/Group\ 5309.png')"></div>
+        </div>
+      </div>
+
+      <section class="how">
+        <h2>Как это работает</h2>
+        <div class="howitworks">
+          <figure>
+            <div class="image-container">
+              <img
+                class="howit"
+                src="img/Group 5290.svg"
+                alt="1 Выберите услугу или эксперта"
+              />
+            </div>
+            <figcaption>1 Выберите услугу или эксперта</figcaption>
+          </figure>
+          <figure>
+            <div class="image-container">
+              <img
+                class="howit"
+                src="img/Group 5291.svg"
+                alt="2 Заполните короткую форму и выберите способ связи"
+              />
+            </div>
+            <figcaption>
+              2 Заполните короткую форму и выберите способ связи
+            </figcaption>
+          </figure>
+          <figure>
+            <div class="image-container">
+              <img
+                class="howit"
+                src="img/Group 5306.svg"
+                alt="3 Мы свяжемся с вами в течение 15 минут"
+              />
+            </div>
+            <figcaption>3 Мы свяжемся с вами в течение 15 минут</figcaption>
+          </figure>
+        </div>
+        <button class="how-button" onclick="scrollToForm()">Получить разбор</button>
+      </section>
+
+     <section class="section-form" id="section-form">
+        <h2 class="form-header">Готовы узнать, что звезды готовят для вас?</h2>
+        <form id="astroForm" class="form-container">
+          <div class="form-left">
+            <h2>
+              Запишитесь на консультацию прямо сейчас и получите персональный
+              астрологический разбор
+            </h2>
+            <h3>Специалисты</h3>
+
+            <div class="specialists-grid">
+              <div class="specialist-option">
+                <input
+                  type="radio"
+                  id="specialist1"
+                  name="specialist"
+                  value="1"
+                />
+                <label for="specialist1">
+                  <img
+                    src="img/1.png"
+                    alt="Петрова Анастасия"
+                  />
+                </label>
+              </div>
+              <div class="specialist-option">
+                <input
+                  type="radio"
+                  id="specialist2"
+                  name="specialist"
+                  value="2"
+                />
+                <label for="specialist2">
+                  <img
+                    src="img/2.png"
+                    alt="Колышева Полина"
+                  />
+                </label>
+              </div>
+              <div class="specialist-option">
+                <input
+                  type="radio"
+                  id="specialist3"
+                  name="specialist"
+                  value="3"
+                />
+                <label for="specialist3">
+                  <img
+                    src="img/3.png"
+                    alt="Романюк Марина"
+                  />
+                </label>
+              </div>
+              <div class="specialist-option">
+                <input
+                  type="radio"
+                  id="specialist4"
+                  name="specialist"
+                  value="4"
+                />
+                <label for="specialist4">
+                  <img
+                    src="img/4.png"
+                    alt="Вещунова Екатерина"
+                  />
+                </label>
+              </div>
+            </div>
+
+            <div class="specialist-info">
+              <h4 class="specialist-name">Выберите специалиста</h4>
+              <p class="specialist-description">
+                Нажмите на фото специалиста для получения информации
+              </p>
+            </div>
+
+            <div class="services-list">
+              <h3>Услуги</h3>
+              <div class="service-option">
+                <input
+                  type="checkbox"
+                  id="service1"
+                  name="services[]"
+                  value="1"
+                />
+                <label for="service1">Звездный код души</label>
+              </div>
+              <div class="service-option">
+                <input
+                  type="checkbox"
+                  id="service2"
+                  name="services[]"
+                  value="2"
+                />
+                <label for="service2"
+                  >Гармония созвездий: совместимость в любви</label
+                >
+              </div>
+              <div class="service-option">
+                <input
+                  type="checkbox"
+                  id="service3"
+                  name="services[]"
+                  value="3"
+                />
+                <label for="service3">Галактический бизнес-прогноз</label>
+              </div>
+              <div class="service-option">
+                <input
+                  type="checkbox"
+                  id="service4"
+                  name="services[]"
+                  value="4"
+                />
+                <label for="service4">Лунный свет: путь к себе</label>
+              </div>
+              <div class="service-option">
+                <input
+                  type="checkbox"
+                  id="service5"
+                  name="services[]"
+                  value="5"
+                />
+                <label for="service5">Планетарный щит: защита и энергия</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-right">
+            <h3>Ваши контакты</h3>
+
+            <div class="name-fields">
+              <input
+                type="text"
+                id="first_name"
+                name="first_name"
+                placeholder="Имя"
+                required
+              />
+              <input
+                type="text"
+                id="last_name"
+                name="last_name"
+                placeholder="Фамилия"
+                required
+              />
+            </div>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="E-mail"
+              required
+            />
+
+            <h3>Дата рождения</h3>
+            <input type="date" id="birth_date" name="birth_date" required />
+
+            <h3>Место рождения</h3>
+            <input
+              type="text"
+              id="location"
+              name="location"
+              placeholder="Город, страна"
+              required
+            />
+
+            <div class="agree-section">
+              <input type="checkbox" id="agree" name="agree" required />
+              <label for="agree"
+                >Я даю согласие на обработку персональных данных и соглашаюсь с
+                офертой.
+              </label>
+            </div>
+
+            <button type="submit" class="submit-btn">Получить разбор</button>
+</form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <!-- Колонка 1: Логотип -->
+        <div class="footer-column">
+          <img src="img/logo2.svg" alt="logo" class="footer-logo" />
+        </div>
+
+        <!-- Колонка 2: Контакты -->
+        <div class="footer-column contacts">
+          <div>
+            <p class="footer-h">Автоинформатор</p>
+            <p class="contact-info">+78121112233</p>
+          </div>
+          <div>
+            <p class="footer-h">По общим вопросам</p>
+            <p class="contact-info">info@astra.ru</p>
+          </div>
+          <div>
+            <p class="footer-h">Мы в социальных сетях</p>
+            <div class="social-icons">
+              <a href="#" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+              <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+              <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Колонка 3: Ссылки -->
+        <div class="footer-column footer-href">
+          <a href="#">Антикоррупционная политика</a>
+          <a href="#">Образовательная лицензия</a>
+          <a href="#">Оплата</a>
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Пользовательское соглашение</a>
+          <a href="#">Публичная оферта</a>
+          <a href="#">Руководство пользователя</a>
+          <a href="#">Согласие на обработку персональных данных</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const slider = document.querySelector(".slider");
+        const slides = document.querySelectorAll(".slide");
+        const dots = document.querySelectorAll(".slider-dot");
+        const prevBtn = document.querySelector(".prev");
+        const nextBtn = document.querySelector(".next");
+        let currentIndex = 0;
+        const slideCount = slides.length;
+
+        function updateSlider() {
+          slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+          dots.forEach((dot, index) => {
+            dot.classList.toggle("active", index === currentIndex);
+          });
+        }
+
+        function nextSlide() {
+          currentIndex = (currentIndex + 1) % slideCount;
+          updateSlider();
+        }
+
+        function prevSlide() {
+          currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+          updateSlider();
+        }
+
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            currentIndex = index;
+            updateSlider();
+          });
+        });
+
+        nextBtn.addEventListener("click", nextSlide);
+        prevBtn.addEventListener("click", prevSlide);
+
+        // Удалён setInterval для автопереключения
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+    const specialists = {
+      1: {
+        name: "Петрова Анастасия",
+        description: "Профессиональный астролог с 8 летним опытом. Специализация: кармическая астрология и анализ прошлых жизней."
+      },
+      2: {
+        name: "Колышева Полина",
+        description: "Профессиональный астролог с 10 летним опытом. Специализация: глубокий анализ натальных карт, прогнозирование и работа с кармическими задачами."
+      },
+      3: {
+        name: "Романюк Марина",
+        description: "Астролог с 7 летним опытом. Специализация: медицинская астрология и вопросы здоровья."
+      },
+      4: {
+        name: "Вещунова Екатерина",
+        description: "Астролог с 12 летним опытом. Специализация: бизнес-астрология и финансовые прогнозы."
+      }
+    };
+
+    const form = document.getElementById("astroForm");
+  const submitBtn = document.getElementById("submit-btn");
+  const btnText = document.getElementById("btn-text");
+  const spinner = document.getElementById("spinner");
+  const formStatus = document.getElementById("form-status");
+
+   // Обработчик выбора специалиста
+  document.querySelectorAll('input[name="specialist"]').forEach(input => {
+    input.addEventListener("change", function() {
+      if (this.checked) {
+        const specialist = specialists[this.value];
+        document.querySelector(".specialist-name").textContent = specialist.name;
+        document.querySelector(".specialist-description").textContent = specialist.description;
+      }
+    });
+  });
+
+  // Обработчик отправки формы
+  document.getElementById("astroForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
+    
+    try {
+      const formData = {
+        first_name: document.getElementById('first_name').value,
+        last_name: document.getElementById('last_name').value,
+        email: document.getElementById('email').value,
+        birth_date: document.getElementById('birth_date').value,
+        location: document.getElementById('location').value,
+        services: Array.from(document.querySelectorAll('input[name="services[]"]:checked')).map(el => el.value),
+        specialist: document.querySelector('input[name="specialist"]:checked').value
+      };
+
+      const response = await fetch('/api/submit-form', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+
+      const result = await response.json();
+      
+      if (!response.ok) {
+        throw new Error(result.message || "Ошибка при отправке формы");
+      }
+
+      // Успешная отправка
+      alert("Спасибо! Ваша заявка принята. Мы свяжемся с вами в ближайшее время.");
+      
+      // Сброс формы
+      this.reset();
+      document.querySelector(".specialist-name").textContent = "Выберите специалиста";
+      document.querySelector(".specialist-description").textContent = "Нажмите на фото специалиста для получения информации";
+
+    } catch (error) {
+      alert("Произошла ошибка: " + error.message);
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const specialists = {
+    1: {
+      name: "Петрова Анастасия",
+      description: "Профессиональный астролог с 8-летним опытом. Специализация: кармическая астрология и анализ прошлых жизней.",
+      quote: "Кармическая астрология - это мост между прошлым и настоящим. Через анализ предыдущих воплощений мы находим ключи к текущим жизненным вызовам и урокам.",
+      photo: "img/1.png"
+    },
+    2: {
+      name: "Колышева Полина",
+      description: "Профессиональный астролог с 10-летним опытом. Специализация: глубокий анализ натальных карт, прогнозирование и работа с кармическими задачами.",
+      quote: "Натальная карта - это карта души. Расшифровывая её символы, мы находим пути наилучшей реализации потенциала, заложенного в человеке при рождении.",
+      photo: "img/2.png"
+    },
+    3: {
+      name: "Романюк Марина",
+      description: "Астролог с 7-летним опытом. Специализация: медицинская астрология и вопросы здоровья.",
+      quote: "Тело и космос связаны неразрывно. Медицинская астрология помогает понять уязвимые места организма и оптимальные периоды для лечения и профилактики.",
+      photo: "img/3.png"
+    },
+    4: {
+      name: "Вещунова Екатерина",
+      description: "Астролог с 12-летним опытом. Специализация: бизнес-астрология и финансовые прогнозы.",
+      quote: "Звезды показывают оптимальные моменты для старта проектов, инвестиций и важных решений. Бизнес-астрология - это стратегическое планирование в гармонии с космическими ритмами.",
+      photo: "img/4.png"
+    }
+  };
+
+  let currentSpecialist = 1;
+
+  // Функция для отображения специалиста
+  function displaySpecialist(specialistId) {
+    currentSpecialist = specialistId;
+    const specialist = specialists[specialistId];
+    const container = document.querySelector('.specialist-container');
+    
+    container.innerHTML = `
+      <div class="specialist-photo">
+        <img src="${specialist.photo}" alt="${specialist.name}" />
+      </div>
+      <p class="quote">"${specialist.quote}"</p>
+      <h2 class="name">${specialist.name}</h2>
+      <p class="description">${specialist.description}</p>
+    `;
+
+    // Обновляем активную кнопку
+    updateActiveButton();
+  }
+
+  // Функция для обновления активной кнопки
+  function updateActiveButton() {
+    document.querySelectorAll('.specialist-button').forEach(button => {
+      if (parseInt(button.getAttribute('data-id')) === currentSpecialist) {
+        button.classList.add('active');
+        // Увеличиваем изображение активного специалиста
+        button.querySelector('img').style.transform = 'scale(1.1)';
+      } else {
+        button.classList.remove('active');
+        button.querySelector('img').style.transform = 'scale(1)';
+      }
+    });
+  }
+
+  // Добавляем обработчики событий для кнопок
+  document.querySelectorAll('.specialist-button').forEach(button => {
+    button.addEventListener('click', function() {
+      displaySpecialist(parseInt(this.getAttribute('data-id')));
+    });
+  });
+
+  // Инициализация - показываем первого специалиста
+  displaySpecialist(1);
+});
+
+function scrollToForm() {
+  const formSection = document.getElementById('section-form');
+  formSection.scrollIntoView({
+    behavior: 'smooth',  // плавная прокрутка
+    block: 'start'       // выравнивание по верху
+  });
+}
+    </script>
+  </body>
+</html>
